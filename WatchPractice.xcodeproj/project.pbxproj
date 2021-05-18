@@ -16,6 +16,7 @@
 		A0415D9C265407CB00DBE6A2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0415D9B265407CB00DBE6A2 /* NotificationController.swift */; };
 		A0415D9E265407CB00DBE6A2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0415D9D265407CB00DBE6A2 /* ComplicationController.swift */; };
 		A0415DA0265407CC00DBE6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0415D9F265407CC00DBE6A2 /* Assets.xcassets */; };
+		A0415DB5265409C700DBE6A2 /* InterfaceControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0415DB4265409C700DBE6A2 /* InterfaceControllerTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		A0415D9F265407CC00DBE6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0415DA1265407CC00DBE6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0415DA2265407CC00DBE6A2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A0415DB4265409C700DBE6A2 /* InterfaceControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceControllerTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A0415D97265407CB00DBE6A2 /* InterfaceController.swift */,
+				A0415DB4265409C700DBE6A2 /* InterfaceControllerTwo.swift */,
 				A0415D99265407CB00DBE6A2 /* ExtensionDelegate.swift */,
 				A0415D9B265407CB00DBE6A2 /* NotificationController.swift */,
 				A0415D9D265407CB00DBE6A2 /* ComplicationController.swift */,
@@ -258,6 +261,7 @@
 			files = (
 				A0415D9C265407CB00DBE6A2 /* NotificationController.swift in Sources */,
 				A0415D9E265407CB00DBE6A2 /* ComplicationController.swift in Sources */,
+				A0415DB5265409C700DBE6A2 /* InterfaceControllerTwo.swift in Sources */,
 				A0415D9A265407CB00DBE6A2 /* ExtensionDelegate.swift in Sources */,
 				A0415D98265407CB00DBE6A2 /* InterfaceController.swift in Sources */,
 			);

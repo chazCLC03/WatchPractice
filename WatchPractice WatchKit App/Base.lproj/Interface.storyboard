@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchPractice_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Touch the special button! Be careful, if you select the wrong box you lose!" numberOfLines="6" id="sus-xs-QCL"/>
+                        <button width="1" alignment="left" title="Play!" id="wRG-f6-7kF">
+                            <connections>
+                                <segue destination="vkw-Ts-zc9" kind="push" id="1i9-S1-6dP"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -32,14 +42,56 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchPractice_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Interface Controller Two-->
+        <scene sceneID="bri-TY-Tfm">
+            <objects>
+                <controller id="vkw-Ts-zc9" customClass="InterfaceControllerTwo" customModule="WatchPractice_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="2" id="qBJ-WG-e7X"/>
+                        <button width="1" alignment="left" title="Button" id="g3p-IS-1uS">
+                            <color key="backgroundColor" red="0.80485716289999998" green="0.2472916768" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="b1Action" destination="vkw-Ts-zc9" id="S11-qj-aIK"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="Bwm-yQ-Ob4">
+                            <color key="backgroundColor" red="0.80485716289999998" green="0.2472916768" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="b2Action" destination="vkw-Ts-zc9" id="imX-Nl-hE5"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="Rqo-fU-Wwv">
+                            <color key="backgroundColor" red="0.80485716289999998" green="0.2472916768" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="b3Action" destination="vkw-Ts-zc9" id="Ke0-Nc-aiz"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="VER-VD-bMw">
+                            <color key="backgroundColor" red="0.80485716289999998" green="0.2472916768" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="b4Action" destination="vkw-Ts-zc9" id="bYJ-5h-aff"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button1" destination="g3p-IS-1uS" id="bsY-kT-Bew"/>
+                        <outlet property="button2" destination="Bwm-yQ-Ob4" id="TJ2-N3-4Gn"/>
+                        <outlet property="button3" destination="Rqo-fU-Wwv" id="ini-h4-09N"/>
+                        <outlet property="button4" destination="VER-VD-bMw" id="PSK-D0-Los"/>
+                        <outlet property="labelOutlet" destination="qBJ-WG-e7X" id="rQe-4R-gP0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="477" y="34"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WatchPractice_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
